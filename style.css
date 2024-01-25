@@ -1,0 +1,167 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1632783242863-35e5ea3079d5?q=80&w=1586&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0% 20%;
+}
+
+#nav {
+    position: relative;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    color: #fff;
+}
+
+#nav #nlinks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#nav i {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    
+}
+
+
+#nlinks  {
+   display: flex;
+   gap: 50px;
+}
+
+
+#nlinks a {
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+#nlinks #active::before {
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#nav h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+
+#text {
+    position: absolute;
+   top: 50%;
+   left: 10%;
+   transform: translate(0%, -50%);
+   width: 40%;
+   color: #fff;
+}
+
+#text h6 {
+    display: flex;
+}
+
+#text h6 span {
+    line-height: 20px;
+    font-size: 30px;
+}
+
+
+#text h1 {
+    font-size: 90px;
+    line-height: 1;
+    margin-top: 40px;
+}
+
+#lineandtext {
+    margin-top: 50px;
+    gap: 30px;
+    display: flex;
+}
+
+#line {
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+}
+
+#lineandtext p {
+    width: 50%;
+    line-height: 30px;
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+
+#bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 20%;
+    background-color: #fff;
+}
+
+#bottom #cube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+#bottom .sec  p {
+    opacity: .4;
+    font-size: 14px;
+    font-weight: 500;
+}
